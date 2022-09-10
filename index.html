@@ -39,27 +39,45 @@
         <h2>Форма (нужно заполнить)</h2>
         <br />
         <form action = "/" method = "POST">
-            <label>Введите Имя:<br /><input name = "field-name-1" value = "Пустое поле" /></label>
+            <label>Введите Имя:<br /><input name = "field-name-1" value = "Пустое поле" /></label> <!--1-->
             <br />
             <br />
-            <label>Введите почту (email):<br /><input name = "field-email" type = "email" placeholder = "Введите почту" /></label>
+            <label>Введите почту (email):<br /><input name = "field-email" type = "email" placeholder = "Введите почту" /></label> <!--2-->
             <br />
             <br />
-            <label>Введите дату рождения:<br /><input name = "field-date" value = "2001-01-01" type = "date" /></label>
+            <label>Введите дату рождения:<br /><input name = "field-date" value = "2001-01-01" type = "date" /></label> <!--3-->
             <br />
             <br />
-            <label>Пол:<br /></label>
+            <label>Пол:<br /></label> <!--4-->
             <label><input type = "radio" cheked = "cheked" name = "radio-group-1" value = "Значение1" />Мужской</label>
             <br />
             <label><input type = "radio" name = "radio-group-1" value = "Значение2" />Женский</label>
             <br />
             <br />
-            <label>Количество конечностей:<br /></label>
+            <label>Количество конечностей:<br /></label> <!--5-->
             <label><input type = "radio" cheked = "cheked" name = "radio-group-2" value = "Значение1" />4</label>
             <br />
             <label><input type = "radio" name = "radio-group-2" value = "Значение2" />5</label>
             <br />
             <label><input type = "radio" name = "radio-group-2" value = "Значение3" />6</label>
+            <br />
+            <br />
+            <label>Выберите сверхспособность:<br /></label> <!--6-->
+            <select name = "field-name-4[]" multiple = "multiple">
+                <option value = "Значение1">Бессмертие</option>
+                <option value = "Значение2" selected = "selected">Прохождение сквозь стены</option>
+                <option value = "Значение3" selected = "selected">Левитация</option>
+            </select>
+            <br />
+            <br />
+            <label>Биография:<br /></label> <!--7-->
+            <textarea name = "field-name-2">Пустое поле</textarea>
+            <br />
+            <br />
+            <label><input type = "checkbox" checked = "checked" name = "check-1" /> С контрактом ознакомлен(а)</label> <!--8-->
+            <br />
+            <br />
+            <input type = "submit" value = "Отправить" /> <!--9-->
         </form>
     </body>
 </html>
