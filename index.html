@@ -22,7 +22,12 @@
             <li><a>https://example.com/ (ссылка без href)</a></li> <!--9-->
             <li><a href = "">Ссылка с пустым href</a></li> <!--10-->
             <li><a href = "https://example.com/" rel="nofollow">Запрещённая ссылка</a></li> <!--11-->
-            <li><a href = "https://example.com/">Запрещённая ссылка для индексации</a><nonscript><a href = "https://example.com/">Запрещённая ссылка для индексации</a></nonscript></li> <!--12-->
+            <li>
+                <!--noindex--> <a href="https://example.com/">Запрещённая ссылка для индексации</a> <!--/noindex-->
+                <nonscpirt>
+                    <a href="https://example.com/"></a>
+                </nonscpirt>
+            </li> <!--12-->
             <li><p>Этот абзац текста нужен только для <a href = "https://example.com/" title = "контекстная ссылка">контекстной ссылки</a>, так что вот так</p></li> <!--13-->
             <li><a href = "https://www.kubsu.ru/"><img src = "https://github.com/IvanovAnton4682671/IvanovAnton4682671.github.io/blob/main/image.jpg?raw=true" alt = "Ссылка-изображение" style = "width:800;height:533;border:0;"></a></li> <!--14-->
             <li><label>Ссылки из прямоугольных и круглых областей картинки</label></li> <!--15-->
