@@ -2,10 +2,13 @@
 <html lang = "ru">
     <head>
         <title>Страница HTML 5</title>
+        <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <h1>Это образец страницы HTML 5 с различными гиперссылками, ссылками и формой</h1>
-        <ol>
+        <h1 id = "header"><img id = "logo" src = "image.png" alt = "Логотип" />Это образец страницы HTML 51 с различными гиперссылками, ссылками и формой</h1>
+        <p class = "fon"><b>Меню ссылок навигации</b></p>
+        <a id = "nav" href = "#kvadr">Ссылка на круг</a><a id = "nav" href = "#tab">Ссылка на таблицу</a><a id = "nav" href = "#konec">Ссылка на конец</a>
+        <ol class = "spisok">
             <li><a href = "http://example.com/">Ссылка на главную страницу сайта example.com</a></li> <!--1-->
             <li><a href = "https://example.com/">Ссылка на главную страницу сайта example.com (протокол https)</a></li> <!--2-->
             <li><a href = "ftp://example.com/Temp/file.txt">Сcылка на файл на сервере FTP без авторизации</a></li> <!--3-->
@@ -28,7 +31,7 @@
             <li><label>Ссылки из прямоугольных и круглых областей картинки</label> <!--15-->
                 <ul>
                     <li><img src = "https://github.com/IvanovAnton4682671/IvanovAnton4682671.github.io/blob/main/square.jpg?raw=true" usemap = "#figura1" alt = "Можете выбрать квадрат" style = "width:360px;height:270px;border:0;"></li>
-                    <li><map name = "figura1"><area shape = "rect" coords = "98,58,263,225" href = "https://www.kubsu.ru/" alt = "Красный квадрат"></map></li>
+                    <li><map id = "kvadr" name = "figura1"><area shape = "rect" coords = "98,58,263,225" href = "https://www.kubsu.ru/" alt = "Красный квадрат"></map></li>
                     <li><img src = "https://github.com/IvanovAnton4682671/IvanovAnton4682671.github.io/blob/main/round.jpg?raw=true" usemap = "#figura2" alt = "Можете выбрать круг" style = "width:512px;height:512px;border:0;"></li>
                     <li><map name = "figura2"><area shape = "circle" coords = "255,255,255" href = "https://example.com/" alt = "Розовый круг"></map></li>
                 </ul></li>
@@ -39,13 +42,38 @@
             <li><a href = "https://u.to/5rhJHA">Сокращённая ссылка (на главную страницу КубГУ)</a></li> <!--20, исходная ссылка (https://kubsu.ru/)-->
             <li><a href = "https://u.to/97hJHA">Сокращённая ссылка (на внутреннюю страницу КубГУ)</a></li> <!--21, исходная ссылка (https://www.kubsu.ru/ru/science/achivments)-->
         </ol>
+        <table id = "tab" border = "1">
+            <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
+            <tr class = "nechet">
+                <td colspan = "3">Ячейка 1 объединённая с 2 и 3</td>
+            </tr>
+            <tr class = "chet">
+                <td colspan = "3">Ячейка 4 объединённая с 5 и 6</td>
+            </tr>
+            <tr class = "nechet">
+                <td>Ячейка 7</td>
+                <td>Ячейка 8</td>
+                <td>Ячейка 9</td>
+            </tr>
+            <tr class = "chet">
+                <td>Ячейка 10</td>
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+            </tr>
+            <tr class = "nechet">
+                <td colspan = "3">Ячейка 13 объединённая с 14 и 15</td>
+            </tr>
+        </table>
         <form id = "form"></form>
         <br />
         <br />
         <br />
-        <h2>Форма (нужно заполнить)</h2>
-        <br />
-        <form action = "/" method = "POST">
+        <h2 class = "forma">Форма (нужно заполнить)</h2>
+        <form action = "/" method = "POST" class = "forma">
             <label>Введите Имя:<br /><input name = "field-name-1" value = "Пустое поле" /></label> <!--1-->
             <br />
             <br />
@@ -86,5 +114,9 @@
             <br />
             <input type = "submit" value = "Отправить" /> <!--9-->
         </form>
+        <br />
+        <br />
+        <br />
+        <p id = "footer"><b><em id = "konec">(с) Сергей Синица 2019</em></b></p>
     </body>
 </html>
