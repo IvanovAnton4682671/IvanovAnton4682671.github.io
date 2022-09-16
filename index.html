@@ -46,7 +46,7 @@
         <h2>Форма (нужно заполнить)</h2>
         <br />
         <form action = "/" method = "POST">
-            <label>Введите Имя:<br /><input name = "field-name-1" value = "Пустое поле" /></label> <!--1-->
+            <label>Введите Имя:<br /><input name = "field-name-1" placeholder = "Введите имя" /></label> <!--1-->
             <br />
             <br />
             <label>Введите почту (email):<br /><input name = "field-email" type = "email" placeholder = "Введите почту" /></label> <!--2-->
@@ -72,16 +72,16 @@
             <label>Выберите сверхспособность:<br /></label> <!--6-->
             <select name = "field-name-4[]" multiple = "multiple">
                 <option value = "Значение1">Бессмертие</option>
-                <option value = "Значение2" selected = "selected">Прохождение сквозь стены</option>
-                <option value = "Значение3" selected = "selected">Левитация</option>
+                <option value = "Значение2">Прохождение сквозь стены</option>
+                <option value = "Значение3">Левитация</option>
             </select>
             <br />
             <br />
             <label>Биография:<br /></label> <!--7-->
-            <textarea name = "field-name-2">Пустое поле</textarea>
+            <textarea name = "field-name-2" placeholder = "Введите биографию"></textarea>
             <br />
             <br />
-            <label><input type = "checkbox" checked = "checked" name = "check-1" /> С контрактом ознакомлен(а)</label> <!--8-->
+            <label><input type = "checkbox" name = "check-1" /> С контрактом ознакомлен(а)</label> <!--8-->
             <br />
             <br />
             <input type = "submit" value = "Отправить" /> <!--9-->
