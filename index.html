@@ -2,10 +2,22 @@
 <html lang = "ru">
     <head>
         <meta charset = "utf-8" />
+        <link rel = "stylesheet" href = "style(черновик).css">
         <title>Страница HTML 5</title>
     </head>
     <body>
-        <h1>Это образец страницы HTML 5 с различными гиперссылками, ссылками и формой</h1>
+        <header>
+            <div class = "header-add">
+                <div class = "logotip-students"><img src = "happy_students.jpg" width = "200" height = "125" alt = "Логотип" class = "logotip"></div>
+                <div class = "zagolovok"><h1>Это образец страницы HTML 5 с различными гиперссылками, ссылками и формой</h1></div>
+            </div>
+        </header>
+        <nav class = "navigation">
+            <a href = "#figura1">Ссылка на круг</a>
+            <a href = "#table">Ссылка на таблицу</a>
+            <a href = "#footer">Ссылка на конец</a>
+        </nav>
+        <p><b>Список ссылок:</b></p>
         <ol>
             <li><a href = "http://example.com/">Ссылка на главную страницу сайта example.com</a></li> <!--1-->
             <li><a href = "https://example.com/">Ссылка на главную страницу сайта example.com (протокол https)</a></li> <!--2-->
@@ -27,9 +39,12 @@
             <li><p>Этот абзац текста нужен только для <a href = "https://example.com/" title = "контекстная ссылка">контекстной ссылки</a>, так что вот так</p></li> <!--13-->
             <li><a href = "https://www.kubsu.ru/"><img src = "kubsu.jpg" alt = "Ссылка-изображение" style = "width:600px;height:400px;border:0;"></a></li> <!--14-->
             <li><label>Ссылки из прямоугольных и круглых областей картинки</label> <!--15-->
+                <br />
+                <br />
+                <br />
                 <ul>
                     <li><img src = "square.jpg" usemap = "#figura1" alt = "Можете выбрать квадрат" style = "width:360px;height:270px;border:0;"></li>
-                    <li><map name = "figura1"><area shape = "rect" coords = "98,58,263,225" href = "https://www.kubsu.ru/" alt = "Красный квадрат"></map></li>
+                    <li><map id = "figura1" name = "figura1"><area shape = "rect" coords = "98,58,263,225" href = "https://www.kubsu.ru/" alt = "Красный квадрат"></map></li>
                     <li><img src = "round.jpg" usemap = "#figura2" alt = "Можете выбрать круг" style = "width:360px;height:360px;border:0;"></li>
                     <li><map name = "figura2"><area shape = "circle" coords = "180,180,180" href = "https://example.com/" alt = "Розовый круг"></map></li>
                 </ul></li>
@@ -40,6 +55,38 @@
             <li><a href = "https://u.to/5rhJHA">Сокращённая ссылка (на главную страницу КубГУ)</a></li> <!--20, исходная ссылка (https://kubsu.ru/)-->
             <li><a href = "https://u.to/97hJHA">Сокращённая ссылка (на внутреннюю страницу КубГУ)</a></li> <!--21, исходная ссылка (https://www.kubsu.ru/ru/science/achivments)-->
         </ol>
+        <br />
+        <table id = "table">
+            <tr class = "tr0">
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
+            <tbody>
+                <tr class = "tr1">
+                    <td colspan = "3">Объединённая ячейка 1, 2, 3</td>
+                </tr>
+                <tr class = "tr2">
+                    <td>Ячейка 4</td>
+                    <td>Ячейка 5</td>
+                    <td>Ячейка 6</td>
+                </tr>
+                <tr class = "tr1">
+                    <td>Ячейка 7</td>
+                    <td>Ячейка 8</td>
+                    <td>Ячейка 9</td>
+                </tr>
+                <tr class = "tr2">
+                    <td colspan = "3">Объединённая ячейка 10, 11, 12</td>
+                </tr>
+                <tr class = "tr1">
+                    <td>Ячейка 13</td>
+                    <td>Ячейка 14</td>
+                    <td>Ячейка 15</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
         <form id = "form"></form>
         <br />
         <br />
@@ -88,4 +135,5 @@
             <input type = "submit" value = "Отправить" /> <!--9-->
         </form>
     </body>
+    <footer id = "footer"><p><b><em>(с) Иванов Антон 2022</em></b></p></footer>
 </html>
