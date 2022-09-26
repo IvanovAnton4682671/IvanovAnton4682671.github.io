@@ -30,21 +30,17 @@
         </style>
     </head>
     <body>
-        <div id = "main-aside-wrapper">
-            <main>
         <header>
             <div>
                 <div class = "logotip-students"><img src = "happy_students.jpg" width = "200" height = "125" alt = "Логотип" class = "logotip"></div>
-                <div class = "zagolovok"><h1>Это образец страницы HTML 51 с различными гиперссылками, ссылками и формой</h1></div>
+                <div class = "zagolovok"><h1>Это образец страницы HTML 5 с различными гиперссылками, ссылками и формой</h1></div>
             </div>
         </header>
-            </main>
-        <aside><nav class = "navigation">
+        <nav class = "navigation">
             <a href = "#figura1">Ссылка на круг</a>
             <a href = "#table">Ссылка на таблицу</a>
             <a href = "#footer">Ссылка на конец</a></aside>
-            </nav></aside>
-        </div>
+        </nav>
         <p class = "spisssil"><b>Список ссылок:</b></p>
         <ol class = "otstup">
             <li><a href = "http://example.com/">Ссылка на главную страницу сайта example.com</a></li> <!--1-->
@@ -84,6 +80,7 @@
             <li><a href = "https://u.to/97hJHA">Сокращённая ссылка (на внутреннюю страницу КубГУ)</a></li> <!--21, исходная ссылка (https://www.kubsu.ru/ru/science/achivments)-->
         </ol>
         <br />
+        <div id = "main-aside-wrapper">
         <main><table id = "table" class = "otstup">
             <tr class = "tr0">
                 <th>Колонка 1</th>
@@ -113,7 +110,7 @@
                     <td>Ячейка 15</td>
                 </tr>
             </tbody>
-        </table></main>
+            </table></main>
         <br />
         <aside><form id = "form"></form>
         <h2 class = "spisssil">Форма (нужно заполнить)</h2>
@@ -158,8 +155,8 @@
             <br />
             <br />
             <input type = "submit" value = "Отправить" /> <!--9-->
-        </form></aside>
-        </main>
+            </form></aside>
+    </div>
         <footer id = "footer" class = "footer"><p class = "spisssil"><b><em>(с) Иванов Антон 2022</em></b></p></footer>
     </body>
 </html>
