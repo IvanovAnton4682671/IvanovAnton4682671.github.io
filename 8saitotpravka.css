@@ -1,0 +1,41 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: gray;
+}
+h1
+{
+    text-align: center;
+    font-size: 2em;
+    color: lightblue;
+}
+.popup
+{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+.popup-content
+{
+    margin:40px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+.center
+{
+    text-align: center;
+    margin-top: 6em;
+}
+.button
+{
+    position: fixed;
+    text-align: center;
+}

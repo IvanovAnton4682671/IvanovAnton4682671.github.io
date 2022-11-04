@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "8saitotpravka.css">
+        <script src = "http://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script src = "8saitotpravka.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <button class = "button" onclick = "PopUpShow()">Показать форму</button>
+            <h1>Страница для контактной формы из попапа</h1>
+        </div>
+        <div class = "popup" id = "popup1">
+            <div class = "popup-content, center" id = "frag">
+                <form action = "https://formcarry.com/s/CB09Box96" method = "POST" accept-charset = "UTF-8">
+                    <h2>Контактная форма</h2>
+                    <label>Введите Ваше имя<br><input name = "field-name-1" placeholder = "Введите Ваше имя"></label>
+                    <br>
+                    <label>Введите Вашу почту<br><input name = "field-email" type = "email" placeholder = "Введите Вашу почту"></label>
+                    <br>
+                    <label>Напишите любое сообщение<br><textarea name = "field-name-2" placeholder = "Напишите любое сообщение"></textarea></label>
+                    <br>
+                    <label><input type = "checkbox" name = "check-1"> Согласен с политикой обработки персональных данных</label>
+                    <br>
+                    <input type = "submit" value = "Отправить форму" onclick = "Send()">
+                </form>
+                <button class = "button, center" onclick = "PopUpHide()">Закрыть форму</button>
+            </div>
+        </div>
+    </body>
+</html>
