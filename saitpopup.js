@@ -72,12 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  closePopupButton.addEventListener('click', () => {
-    window.history.back();
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
-  });
-
   $(function () {
     $('#forma').submit(function (e) {
       e.preventDefault();
