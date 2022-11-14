@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "saitpopup.css">
+        <script src = "jquery.js" defer></script>
+        <script src = "saitpopup.js" defer></script>
+        <title>Сайт с контактной формой</title>
+    </head>
+    <body>
+        <div class = "center">
+            <h1>Страница для контактной формы из PopUp`а</h1>
+            <button onclick = "PopUpShow()" class = "open-popup">Показать форму</button>
+        </div>
+        <div class = "popup" id = "popup1">
+            <div class = "center popup-content">
+                <form class = "center otstyp_verh" action = "/" method = "POST" id = "forma">
+                    <h2>Контактная форма</h2>
+                    <label>Введите Ваше имя:<br><input id = "Name" name = "field-name-1" placeholder = "Введите Ваше имя"></label>
+                    <br>
+                    <label>Введите Вашу почту:<br><input id = "Email" name = "field-email" type = "email" placeholder = "Введите Вашу почту"></label>
+                    <br>
+                    <label>Напишите любое сообщение:<br><textarea id = "Text" name = "field-name-2" placeholder = "Напишите любое сообщение"></textarea></label>
+                    <br>
+                    <label><input id = "CB" type = "checkbox" name = "check-1">Согласен с политикой обработки персональных данных</label>
+                    <br>
+                    <input type = "submit" value = "Отправить форму">
+                </form>
+                <button onclick = "PopUpHide()" class = "close-popup">Скрыть форму</button>
+            </div>
+        </div>
+    </body>
+</html>
